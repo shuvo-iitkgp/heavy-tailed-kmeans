@@ -123,16 +123,16 @@ for run in range(n_runs):
 
 df = pd.DataFrame.from_records(records)
 
-
+df.to_csv("./results/balanced_k_means.csv", index = None)
 logger.info("Completed the df calculation")
 
-plot_boxplots(df, save_path="./experiments/balanced-kmeans-perf-boxplots-alpha-1_2.png")
+plot_boxplots(df, path_save="./images/balanced_kmeans_perf_boxplots_alpha_1_2.png")
 
 logger.info("Completed the box plots calculation")
 
-print_summary_table(df, save_path="./experiments/balanced-kmeans-perf-summary-table-alpha-1_2.png")
+print_summary_table(df, save_path="./results/balanced_kmeans_perf_summary_table_alpha_1_2.png")
 logger.info("saved the summary table")
 
-center_convergence_plot(alpha=1.2, gamma=0.1, path_save="./experiments/center-convergence-alpha-1_2.png")
+center_convergence_plot(alpha=1.2, gamma=0.1, path_save="./images/center_convergence_alpha_1_2.png")
 
 logger.info("All done.")

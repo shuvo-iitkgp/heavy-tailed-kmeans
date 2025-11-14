@@ -70,7 +70,7 @@ def plot_boxplots(df, path_save = "./images/balanced-kmeans-convergence.png"):
     # plt.show()
 
 
-def print_summary_table(df):
+def print_summary_table(df, save_path = "./results/summary-table.png"):
     agg = df.groupby(["dist", "algo"]).agg(
         ARI_mean=("ARI", "mean"),
         ARI_std=("ARI", "std"),
@@ -89,7 +89,7 @@ def print_summary_table(df):
         table[metric] = m.map("{:.3f}".format) + " ± " + s.map("{:.3f}".format)
 
     table["Failure prob (ARI<0.8)"] = agg["Failure_rate"].map("{:.3f}".format)
-    table.to_csv("./results/balanced-kmeans-summary.csv", index = None)
+    table.to_csv(save_path , index = None)
     print("\nSummary (mean ± std over runs):\n")
     print(table.to_string())
 
