@@ -1,0 +1,8 @@
+dataset,distortion_std,distortion_bal,size_ratio_std,size_ratio_bal
+pareto_sym,0.6185988132670657,0.6185988132670657,"{np.int32(0): np.int64(50168), np.int32(1): np.int64(49832)}","{np.int32(0): np.int64(50168), np.int32(1): np.int64(49832)}"
+pareto_asym,0.6309718650708478,1845.7379438671906,"{np.int32(0): np.int64(99999), np.int32(1): np.int64(1)}","{np.int32(0): np.int64(95000), np.int32(1): np.int64(5000)}"
+mixture_rvs,0.6266435913684562,0.6266435913684562,"{np.int32(0): np.int64(55087), np.int32(1): np.int64(44913)}","{np.int32(0): np.int64(55087), np.int32(1): np.int64(44913)}"
+high_dim_pareto,48.9900463717679,679.1805782564257,"{np.int32(0): np.int64(99992), np.int32(1): np.int64(8)}","{np.int32(0): np.int64(95000), np.int32(1): np.int64(5000)}"
+pareto_sym_2d,1.7103742386284706,1.7103742386284706,"{np.int32(0): np.int64(49900), np.int32(1): np.int64(50100)}","{np.int32(0): np.int64(49900), np.int32(1): np.int64(50100)}"
+NYC_Taxi_k2,2.4124627028742385,2.4124627028742385,"{np.int32(0): np.int64(31048), np.int32(1): np.int64(15122)}","{np.int32(0): np.int64(31048), np.int32(1): np.int64(15122)}"
+NYC_Taxi_k3,1.925370461517765,1.925370461517765,"{np.int32(0): np.int64(20484), np.int32(1): np.int64(7466), np.int32(2): np.int64(18220)}","{np.int32(0): np.int64(20484), np.int32(1): np.int64(7466), np.int32(2): np.int64(18220)}"
